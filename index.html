@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración básica del documento: charset, adaptación y adatos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículum Vitae Web (HTML5 + CSS puro) - Estudiante ASIX">
+  <title>CV Web - Estudiante ASIX</title>
+  <!-- Enlace al archivo CSS con los estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Icono de la página (favicon) -->
+  <link rel="icon" type="image/svg+xml" href="assets/img.svg">
+</head>
+
+<body id="top">
+  <!-- Cabecera: contiene foto, nombre, rol e información de contacto -->
+  <header class="header">
+    <div class="container header__content">
+      <!-- Foto de perfil circular -->
+      <img class="header__photo" src="png/yo.jpeg" alt="Foto de perfil del estudiante">
+
+      <!-- Información personal: nombre, rol y datos de contacto -->
+      <div class="header__info">
+        <h1 class="header__name">Jiahao Chen</h1>
+        <p class="header__role">Estudiante de ASIX</p>
+
+        <!-- Contenedor de contacto: email, teléfono, GitHub y ubicación -->
+        <div class="header__contact">
+          <a class="link header__contact-item" href="mailto:jiahaocx@gmail.com">jiahaocx@gmail.com</a>
+          <a class="link header__contact-item" href="tel:+34686067195">Telf: +34 686 067 195</a>
+          <a class="link header__contact-item header__github" href="https://github.com/JiahaoChenXu" target="_blank" rel="noopener noreferrer">
+            <img src="png/github-logo-png_seeklogo-304612.png" alt="GitHub">
+            GitHub
+          </a>
+          <span class="header__location header__contact-item">📍 Barcelona</span>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Navegación: menú fijo con enlaces a las secciones del CV -->
+  <nav class="nav" aria-label="Navegación principal">
+    <div class="container">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#top">Perfil</a></li>
+        <li><a class="nav__link" href="#formacion">Formación</a></li>
+        <li><a class="nav__link" href="#habilidades">Habilidades</a></li>
+        <li><a class="nav__link" href="#idiomas">Idiomas</a></li>
+        <li><a class="nav__link" href="#proyectos">Proyectos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenido principal: todas las secciones del CV -->
+  <main class="main">
+    <div class="container">
+      <!-- Sección de perfil profesional: descripción personal -->
+      <section id="perfil" class="section">
+        <h2 class="section__title">Perfil profesional</h2>
+        <article class="section__content">
+          <p>
+            <p>
+Estudiante de ASIX con interés en el hacking ético, el pentesting y la administración de sistemas. 
+He trabajado en entornos técnicos relacionados con sistemas operativos, redes y configuración básica de servicios. 
+Cuento también con conocimientos en desarrollo web estático mediante HTML5 y CSS3. 
+Me considero una persona responsable, tranquila y metódica, con capacidad para trabajar en entornos técnicos 
+y con interés en la mejora continua y el aprendizaje autónomo en el ámbito de la ciberseguridad.
+</p>
+
+
+        </article>
+      </section>
+
+      <!-- Sección de formación: estudios académicos con timeline visual -->
+      <section id="formacion" class="section">
+        <h2 class="section__title">Formación académica</h2>
+        <article class="section__content">
+          <div class="timeline">
+            <div class="timeline__item">
+              <h3 class="timeline__title">CFGS ASIX</h3>
+              <p class="meta">La Salle Gracia 2025 (en curso)</p>
+              </div>
+
+            <div class="timeline__item">
+              <h3 class="timeline__title">Bachillerato</h3>
+              <p class="meta">Pompeu Fabra 2023 - 2025</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Sección de habilidades: técnicas y transversales en grid de 2 columnas -->
+      <section id="habilidades" class="section">
+        <h2 class="section__title">Habilidades</h2>
+        <article class="section__content">
+          <div class="grid-2">
+            <div>
+              <h3 class="section__subtitle">Técnicas</h3>
+              <ul class="list">
+                <li>HTML y CSS (nivel básico)</li>
+                <li>Hardware (montaje y mantenimiento de PC básico)</li>
+                <li>Redes y comandos básicos (TCP/IP, subredes a nivel básico)</li>
+                <li>Bases de datos (SQL básico)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="section__subtitle">Transversales</h3>
+              <ul class="list">
+                <li>Constante</li>
+                <li>Trabajo en equipo</li>
+                <li>Organizado</li>
+                <li>Entusiasta</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Sección de idiomas: lista con badges de nivel -->
+      <section id="idiomas" class="section">
+        <h2 class="section__title">Idiomas</h2>
+        <article class="section__content">
+          <ul class="langs">
+            <li class="langs__item"><span>Español</span><span class="badge">Nativo</span></li>
+            <li class="langs__item"><span>Catalán</span><span class="badge">Nativo</span></li>
+            <li class="langs__item"><span>Inglés</span><span class="badge">B1</span></li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Sección de proyectos: tarjetas con información de cada proyecto -->
+      <section id="proyectos" class="section">
+        <h2 class="section__title">Proyectos</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title">CV Web</h3>
+            <p class="meta"><strong>Práctica:</strong>Módulo de Lenguajes de Marcas</p>
+            <p class="meta"><strong>Tecnologías:</strong> HTML5, CSS (Flex/Grid, print)</p>
+            <p>
+            <a href="https://github.com/La-Salle-Gracia-FP/ac-jiahaooooo/tree/main/Proyectos/PràcticaCV" target="_blank">Repositori GitHub</a>
+          </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Mini red local</h3>
+            <p class="meta"><strong>Pràctica:</strong>Módulo de Redes</p>
+            <p class="meta"><strong>Tecnologías:</strong> IPv4, DHCP, DNS</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Consultas SQL básicas (ejercicios)</h3>
+            <p class="meta"><strong>Pràctica:</strong>Módulo de Base de Datos</p>
+            <p class="meta"><strong>Tecnologías:</strong> SQL, modelo relacional</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <!-- Barra lateral: información adicional y notas -->
+  <aside class="aside" aria-label="Información adicional">
+    <div class="container">
+      <article class="card">
+
+        <h2 class="section__title">Notas</h2>
+      <p class="aside__text">
+        Disponible para prácticas / proyectos junior.
+        Me interesa seguir aprendiendo sobre administración de sistemas y seguridad básica.
+      </article>
+      </p>
+    </div>
+  </aside>
+
+  <!-- Pie de página: copyright y fecha de actualización -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>&copy; 2026 Jiahao Chen</p>
+      <p class="meta">Última actualización: <time datetime="2026-01-20">Enero 2026</time></p>
+    </div>
+  </footer>
+</body>
+</html>
